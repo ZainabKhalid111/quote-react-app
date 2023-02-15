@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../night.jpg);
+  background-color: aqua;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockquote-custom {
+  height: max-content;
+  width: 500px;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: rgba(4, 20, 42, 0.7) -5px 5px, rgba(15, 12, 37, 0.5) -10px 10px !important;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #e9ae0b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 13px;
+  border-radius: 10rem;
+  color: whitesmoke;
+  font-weight: bolder;
+  background-color: none;
+  outline: 2px solid #e9ae0b;
+  text-transform: uppercase;
+  overflow: hidden;
+  background-color: #e9ae0b;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(109, 31, 31, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.button:hover,
+.button:focus {
+  color: whitesmoke;
+  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+@media only screen and (max-width: 576px){
+  .blockquote-custom{
+    width: 250px;
+    height: max-content;
+  }
+  
+}
